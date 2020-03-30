@@ -23,4 +23,5 @@ t1 <- read_spss("Unipark_t1_example.sav")
 names(t0)[1] <- names(t1)[1] <- "VPCODE"
 fragebogen_daten <- full_join(t0, t1, by = "VPCODE")
 # Warum gibt es in t0 auch eine Variable deren Name bereits auf t1 ended?
+# Amanda (30.03.20) Das ist ein Fehler, den ich ausgebessert habe
 
